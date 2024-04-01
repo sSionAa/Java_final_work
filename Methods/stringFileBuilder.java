@@ -9,7 +9,7 @@ public class stringFileBuilder {
         try {
             String result = Files.readString(Paths.get(path));
             String[] picnic = result.toLowerCase().replaceAll("\\s+"," ").split(" ");
-            WordCounter.WordsCounter(picnic);
+            wordCounter.WordsCounter(picnic);
         }catch (IOException e){
             throw new RuntimeException(e.getMessage());
         }
