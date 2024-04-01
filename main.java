@@ -1,8 +1,8 @@
-import methods.StartProgram;
+import Methods.programExe;
 import java.io.IOException;
 
 public class Main {
     public static void main(String[] args) throws IOException {
-        StartProgram.Start("input.txt");
+        programExe.Start("input.txt");
 
     }
