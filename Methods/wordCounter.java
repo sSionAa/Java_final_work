@@ -3,7 +3,7 @@ package Methods;
 import java.util.HashMap;
 import java.util.Map;
 
-public class WordCounter {
+public class wordCounter {
     public static void WordsCounter(String[] picnic) {
         String maxLength = picnic[0];
         int countOfWords = 0;
