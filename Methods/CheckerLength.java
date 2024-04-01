@@ -1,4 +1,4 @@
-package methods;
+package Methods;
 
 public class CheckerLength {
     public static String CheckLen(String a, String b) {
