@@ -1,4 +1,4 @@
-package methods;
+package Methods;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -10,7 +10,7 @@ public class WordCounter {
         Map<String,Integer> uniqPicnic = new HashMap<>();
         for (String foods : picnic ) {
             countOfWords+=1;
-            maxLength = CheckLength.CheckLen(maxLength,foods);
+            maxLength = WordCounter.CheckLen(maxLength,foods);
             if (!uniqPicnic.containsKey(foods)){
                 uniqPicnic.put(foods,1);
             }else {
