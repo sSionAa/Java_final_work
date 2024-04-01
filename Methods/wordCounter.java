@@ -4,13 +4,13 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class WordCounter {
-    public static void WordCounter(String[] picnic) {
+    public static void WordsCounter(String[] picnic) {
         String maxLength = picnic[0];
         int countOfWords = 0;
         Map<String,Integer> uniqPicnic = new HashMap<>();
         for (String foods : picnic ) {
             countOfWords+=1;
-            maxLength = WordCounter.CheckLen(maxLength,foods);
+            maxLength = CheckerLength.CheckLen(maxLength,foods);
             if (!uniqPicnic.containsKey(foods)){
                 uniqPicnic.put(foods,1);
             }else {
