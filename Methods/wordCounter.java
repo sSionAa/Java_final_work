@@ -10,7 +10,7 @@ public class wordCounter {
         Map<String,Integer> uniqPicnic = new HashMap<>();
         for (String foods : picnic ) {
             countOfWords+=1;
-            maxLength = CheckerLength.CheckLen(maxLength,foods);
+            maxLength = checkerLength.CheckLen(maxLength,foods);
             if (!uniqPicnic.containsKey(foods)){
                 uniqPicnic.put(foods,1);
             }else {
